@@ -24,7 +24,8 @@ class MessagesController < ApplicationController
   end
 
   def get_archive
-    # render json: { collection: messages, count: messages.count }
+    messages = Message.where('receiver_id = ? OR sender_id = ?', params[:user_id], params[:user_id])
+    render json: { collection: messages.group_by{|m| m.created_at.to_date} }
   end
 
   private
