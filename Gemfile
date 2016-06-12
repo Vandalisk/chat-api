@@ -15,8 +15,8 @@ gem 'puma', '~> 3.0'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'bunny', '>= 2.3.1'
 gem 'redis', '~> 3.3'
-gem 'elasticsearch-rails', '~> 0.1.8'
-gem 'elasticsearch-model'
+gem 'celluloid'
+gem 'chewy'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -28,6 +28,10 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
   gem 'rspec-rails'
+  gem 'factory_girl'
+  gem 'factory_girl_rails'
+  gem 'database_cleaner'
+  gem 'ffaker'
 end
 
 group :development do
