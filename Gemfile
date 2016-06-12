@@ -13,6 +13,10 @@ gem 'puma', '~> 3.0'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+gem 'bunny', '>= 2.3.1'
+gem 'redis', '~> 3.3'
+gem 'elasticsearch-rails', '~> 0.1.8'
+gem 'elasticsearch-model'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
