@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
+  resources :chats
+
   resources :users do
+
     resources :messages do
       collection do
         get :get_unreaded
