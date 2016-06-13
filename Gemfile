@@ -18,6 +18,7 @@ gem 'redis', '~> 3.3'
 gem 'celluloid'
 gem 'chewy'
 gem 'aasm'
+gem 'carrierwave'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
