@@ -17,7 +17,7 @@ gem 'bunny', '>= 2.3.1'
 gem 'redis', '~> 3.3'
 gem 'celluloid'
 gem 'chewy'
-
+gem 'aasm'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -32,6 +32,7 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'database_cleaner'
   gem 'ffaker'
+  gem 'pry-rails'
 end
 
 group :development do
