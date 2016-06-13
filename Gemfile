@@ -19,6 +19,9 @@ gem 'celluloid'
 gem 'chewy'
 gem 'aasm'
 gem 'carrierwave'
+gem 'mini_magick'
+gem 'carrierwave-video'
+gem 'sidekiq'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160612190024) do
+ActiveRecord::Schema.define(version: 20160613102533) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -43,6 +43,16 @@ ActiveRecord::Schema.define(version: 20160612190024) do
     t.index ["receiver_id"], name: "index_messages_on_receiver_id", using: :btree
     t.index ["sender_id"], name: "index_messages_on_sender_id", using: :btree
     t.index ["state"], name: "index_messages_on_state", using: :btree
+  end
+
+  create_table "uploader_files", force: :cascade do |t|
+    t.string   "picture"
+    t.string   "video"
+    t.string   "file"
+    t.integer  "message_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["message_id"], name: "index_uploader_files_on_message_id", using: :btree
   end
 
   create_table "users", force: :cascade do |t|
